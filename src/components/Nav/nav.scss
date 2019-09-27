@@ -1,23 +1,73 @@
 .nav {
-  color: white;
+  color: #fff;
   height: 0vh;
+  text-transform: uppercase;
   transition: all .3s ease;
 
   & ul {
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
     
     & li {
       width: 50%;
       height: 15vh;
       text-align: center;
-      padding-top: 5vh;
+      padding-top: 6vh;
     }
   }
 }
 
 .navActive {
-  padding-top: 2rem;
   height: 30vh;
   transition: all .5s ease;
+}
+
+.navActive::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 0vh;
+  width: 1px;
+  display: block;
+  left: 50%;
+  top: 15vh;
+  transform: translateY(-50%);
+  animation: navBarVert .5s .3s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navBarVert {
+  from {
+    height: 0vh;
+  }
+
+  to {
+    height: 10vh;
+  }
+}
+
+.navActive::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  width: 0%;
+  display: block;
+  left: 50%;
+  top: 15vh;
+  transform: translateX(-50%);
+  animation: navBarHor .5s .7s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navBarHor {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 30%;
+  }
 }

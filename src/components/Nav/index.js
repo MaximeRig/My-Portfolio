@@ -12,10 +12,10 @@ const Nav = ({ navigation }) => {
   return (
     <nav className={navClassNames}>
       <ul>
-        <li>Accueil</li>
-        <li>About</li>
-        <li>Projets</li>
-        <li>Contact</li>
+        <li>accueil</li>
+        <li>à propos</li>
+        <li>projets</li>
+        <li>contact</li>
       </ul>
     </nav>
   );
