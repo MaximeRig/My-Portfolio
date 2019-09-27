@@ -1,6 +1,5 @@
 // == Import : npm
 import React from 'react';
-import { FaHeart, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 // == Import : local
 import './app.scss';
@@ -9,41 +8,33 @@ import './app.scss';
 const App = () => (
   <div id="app">
 
-    <div className="lines">
-      <div className="redLine lines--left" />
-      <div className="redLine lines--bottom" />
-      <div className="redLine lines--right" />
-    </div>
-
-    <nav className="navigation">
+    <nav className="nav">
       <ul>
-        <li>accueil</li>
-        <li>à propos</li>
-        <li>outils</li>
-        <li>projets</li>
+        <li>Accueil</li>
+        <li>About</li>
+        <li>Projets</li>
+        <li>Contact</li>
       </ul>
     </nav>
 
-    <section className="about"></section>
-    <section className="tools"></section>
-    <section className="projects"></section>
-
-    <h1 className="title">Bonjour,
-      <span>Je suis <strong className="title-content">Maxime Rigaud</strong></span>
-      <span>et je suis <strong className="title-content">Développeur Web</strong></span>
-    </h1>
-
-    <footer className="footer">
-      <p className="footer--developper">Développé avec <FaHeart /> par Maxime Rigaud</p>
-      <div className="footer--social">
-        <a href="https://www.linkedin.com/in/maximerigaud-dev/">
-          <FaLinkedinIn className="linkedin" />
-        </a>
-        <a href="https://github.com/MaximeRig">
-          <FaGithub className="github" />
-        </a>
+    <header className="header">
+      <div className="hamburger">
+        <div className="hamburger-top" />
+        <div className="hamburger-center" />
+        <div className="hamburger-bottom" />
       </div>
-    </footer>
+      <div className="me">
+        <h1 className="me-name">Maxime Rigaud</h1>
+        <p className="me-job">Développeur web</p>
+      </div>
+    </header>
+
+    <section className="about">
+      <h2 className="about-title">Mettre mes compétences au service de votre entreprise</h2>
+      <p className="about-desc">Depuis toujours, j'ai voulu être développeur web.</p>
+      <p className="about-desc">C'est pourquoi je recherche une opportunité en Haute-Savoie et sur Genève.</p>
+    </section>
+
 
   </div>
 );
