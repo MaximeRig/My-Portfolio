@@ -15,6 +15,10 @@
       height: 15vh;
       text-align: center;
       padding-top: 6vh;
+
+      &:hover {
+        background-color: darken(#0D1110, 20%);
+      }
     }
   }
 }

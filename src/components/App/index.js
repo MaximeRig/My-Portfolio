@@ -28,13 +28,19 @@ class App extends React.Component {
     }
   }
 
+  handleClickNavElt = () => {
+    this.setState({
+      navigation: false,
+    });
+  }
+
   render() {
     const { navigation } = this.state;
     const appNavigationActive = classNames('app', { appNoScroll: navigation });
     return (
       <div className={appNavigationActive}>
   
-        <Nav navigation={navigation} />
+        <Nav navigation={navigation} handleClickNavElt={this.handleClickNavElt} />
   
         <Header navigation={navigation} handleClickMenu={this.handleClickMenu} />
   

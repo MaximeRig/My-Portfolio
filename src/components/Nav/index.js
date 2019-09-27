@@ -7,22 +7,23 @@ import classNames from 'classnames';
 import './nav.scss';
 
 // == Composant
-const Nav = ({ navigation }) => {
+const Nav = ({ navigation, handleClickNavElt }) => {
   const navClassNames = classNames('nav', { navActive: navigation });
   return (
     <nav className={navClassNames}>
       <ul>
-        <li>accueil</li>
-        <li>à propos</li>
-        <li>projets</li>
-        <li>contact</li>
+        <li onClick={handleClickNavElt}>accueil</li>
+        <li onClick={handleClickNavElt}>à propos</li>
+        <li onClick={handleClickNavElt}>projets</li>
+        <li onClick={handleClickNavElt}>contact</li>
       </ul>
     </nav>
   );
-}
+};
 
 Nav.propTypes = {
   navigation: PropTypes.bool.isRequired,
+  handleClickNavElt: PropTypes.func.isRequired,
 };
 
 // == Export
