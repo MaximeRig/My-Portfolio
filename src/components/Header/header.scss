@@ -1,7 +1,9 @@
+@import '../../styles/vars';
+
 .wrapperHeader {
   width: 90% !important;
   margin: 0 auto;
-  transition: all .3s ease;
+  transition: all $animation-duration ease;
 }
 
 .header {
@@ -12,7 +14,7 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0D1110;
+  background-color: $black-color;
 }
 
 .hamburgerNav {
@@ -32,10 +34,10 @@
 
 .hamburgerNav .hamburger-top {
   position: relative;
-  background-color: #fff;
+  background-color: $general-font-color;
   transform: rotate(45deg);
   top: 6px;
-  transition: all .3s ease;
+  transition: all $animation-duration ease;
 }
 
 .hamburgerNav .hamburger-center {
@@ -43,10 +45,10 @@
 }
 
 .hamburgerNav .hamburger-bottom {
-  background-color: #fff;
+  background-color: $general-font-color;
   transform: rotate(-45deg);
   top: -6px;
-  transition: all .3s ease;
+  transition: all $animation-duration ease;
 }
 
 .hamburger {
@@ -68,13 +70,13 @@
     left: 0;
     width: 30px;
     height: 3px;
-    background-color: #0D1110;
+    background-color: $black-color;
   }
 
   &-center {
     width: 30px;
     height: 3px;
-    background-color: #0D1110;
+    background-color: $black-color;
   }
 
   &-bottom {
@@ -82,7 +84,7 @@
     left: 0;
     width: 30px;
     height: 3px;
-    background-color: #0D1110;
+    background-color: $black-color;
   }
 }
 
@@ -92,7 +94,7 @@
   .hamburger:hover > .hamburger-bottom {
     left: 10px;
     transition-property: all;
-    transition-duration: .3s;
+    transition-duration: $animation-duration;
     transition-timing-function: ease;
   }
 

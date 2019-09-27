@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import './app.scss';
 import Nav from 'src/components/Nav';
 import Header from 'src/components/Header';
+import About from 'src/components/About';
 
 // == Composant
 class App extends React.Component {
@@ -45,12 +46,8 @@ class App extends React.Component {
         <Header navigation={navigation} handleClickMenu={this.handleClickMenu} />
   
         <main className="main">
-  
-          <section className="about">
-            <h2 className="about-title">Mettre mes compétences au service de votre entreprise</h2>
-            <p className="about-desc">Depuis toujours, j'ai voulu être développeur web.</p>
-            <p className="about-desc">C'est pourquoi je recherche une opportunité en Haute-Savoie et sur Genève.</p>
-          </section>
+
+          <About />
   
         </main>
       </div>

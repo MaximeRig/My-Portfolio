@@ -1,13 +1,15 @@
+@import '../../styles/vars';
+
 .nav {
-  color: #fff;
+  color: $general-font-color;
   height: 0vh;
   text-transform: uppercase;
-  transition: all .3s ease;
+  transition: all $animation-duration ease;
 
   & ul {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     
     & li {
@@ -17,7 +19,7 @@
       padding-top: 6vh;
 
       &:hover {
-        background-color: darken(#0D1110, 20%);
+        background-color: darken($black-color, 20%);
       }
     }
   }
@@ -31,7 +33,7 @@
 .navActive::before {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: $general-font-color;
   height: 0vh;
   width: 1px;
   display: block;
@@ -55,7 +57,7 @@
 .navActive::after {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: $general-font-color;
   height: 1px;
   width: 0%;
   display: block;

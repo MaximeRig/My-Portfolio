@@ -2,7 +2,7 @@
 @import '../../styles/vars';
 
 .app {
-  background-color: #0D1110;
+  background-color: $black-color;
 }
 
 .appNoScroll {
@@ -14,7 +14,7 @@
   position: absolute;
   bottom: 15%;
   left: 10%;
-  color: #fff;
+  color: $general-font-color;
   letter-spacing: .2rem;
 
   &-name {
@@ -29,15 +29,5 @@
 }
 
 .main {
-  background-color: #E3E3E3;
-  padding: 0 2em;
-  color: #0D1110;
-}
-
-.about {
-  
-
-  &-title {
-    text-align: center;
-  }
+  background-color: $background-grey;
 }
