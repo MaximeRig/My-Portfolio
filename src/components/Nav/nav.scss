@@ -1,0 +1,23 @@
+.nav {
+  color: white;
+  height: 0vh;
+  transition: all .3s ease;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+    & li {
+      width: 50%;
+      height: 15vh;
+      text-align: center;
+      padding-top: 5vh;
+    }
+  }
+}
+
+.navActive {
+  padding-top: 2rem;
+  height: 30vh;
+  transition: all .5s ease;
+}
