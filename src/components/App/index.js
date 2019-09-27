@@ -7,6 +7,7 @@ import './app.scss';
 import Nav from 'src/components/Nav';
 import Header from 'src/components/Header';
 import About from 'src/components/About';
+import Projects from 'src/components/Projects';
 
 // == Composant
 class App extends React.Component {
@@ -48,6 +49,7 @@ class App extends React.Component {
         <main className="main">
 
           <About />
+          <Projects />
   
         </main>
       </div>
