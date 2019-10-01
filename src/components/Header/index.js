@@ -21,7 +21,7 @@ const Header = ({ navigation, handleClickMenu }) => {
       </div>
       <div className="me">
         <h1 className="me-name">Maxime Rigaud</h1>
-        <p className="me-job">Développeur web</p>
+        <p className="me-job">Développeur web front end</p>
       </div>
     </header>
   );

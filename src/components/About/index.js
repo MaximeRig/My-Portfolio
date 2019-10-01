@@ -10,11 +10,10 @@ const About = () => {
   return (
     <React.Fragment>
       <section className="about">
-        <h2 className="about-title">Mettre mes compétences au service de votre entreprise.</h2>
-        <p className="about-desc">Depuis toujours, je veux devenir <strong>développeur web</strong>.</p>
-        <p className="about-desc">J'ai la chance d'avoir pu profiter d'une formation de qualité, de pratiquer et d'en apprendre un peu plus chaque jour.</p>
-        <p className="about-desc">Mais aujourd'hui, ce qu'il me manque, c'est une entreprise dans laquelle m'épanouir car, oui, je suis enfin prêt.</p>
-        <p className="about-desc">J'aime le développement, je compte bien trouver l'entreprise qui saura me faire confiance et ainsi, commencer une belle carrière.</p>
+        <h2 className="about-title">Mettre mes compétences au service de votre entreprise</h2>
+        <p className="about-desc">Spécialisé dans l'écosytème <strong>Javascript</strong> avec <strong>React</strong>, je développe des interfaces en mobile first, axées sur la simplicité et l'accessibilité.</p>
+        <p className="about-desc">Aujourd'hui, je recherche une entreprise dans laquelle m'épanouir afin d'apporter mon expérience et mes qualités.</p>
+        <p className="about-desc">J'aime le développement, c'est la raison pour laquelle je continue de me former sur différentes technologies qui permettent d'être plus compétitifs sur le marché de l'emploi.</p>
         <div className="box" />
       </section>
       <div className="separateSection" />
