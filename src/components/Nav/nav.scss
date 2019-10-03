@@ -16,7 +16,13 @@
       width: 50%;
       height: 15vh;
       text-align: center;
-      padding-top: 6vh;
+
+      & a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 15vh;
+      }
 
       &:hover {
         background-color: darken($black-color, 20%);

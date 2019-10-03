@@ -14,20 +14,17 @@ class App extends React.Component {
 
   state = {
     navigation: false,
+    navActive: 0,
   }
 
   handleClickMenu = () => {
+    window.scrollTo(0,0);
+
     const { navigation } = this.state;
-    if (!navigation) {
-      this.setState({
-        navigation: true,
-      });
-    }
-    else {
-      this.setState({
-        navigation: false,
-      });
-    }
+
+    this.setState({
+      navigation: !navigation,
+    });
   }
 
   handleClickNavElt = () => {
@@ -45,13 +42,14 @@ class App extends React.Component {
         <Nav navigation={navigation} handleClickNavElt={this.handleClickNavElt} />
   
         <Header navigation={navigation} handleClickMenu={this.handleClickMenu} />
-  
+
         <main className="main">
 
           <About />
           <Projects />
   
         </main>
+  
       </div>
     );
   }

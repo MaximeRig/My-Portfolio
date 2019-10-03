@@ -13,7 +13,7 @@ const Header = ({ navigation, handleClickMenu }) => {
   const hamburgerClassNames = classNames({ hamburger: !navigation }, { hamburgerNav: navigation });
 
   return (
-    <header className={headerClassNames}>
+    <header id="home" className={headerClassNames}>
       <div onClick={handleClickMenu} className={hamburgerClassNames}>
         <div className="hamburger-top" />
         <div className="hamburger-center" />
