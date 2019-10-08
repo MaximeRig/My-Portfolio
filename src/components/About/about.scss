@@ -2,6 +2,7 @@
 
 .about {
   position: relative;
+  z-index: 100;
   padding: 3em 2em 3em;
   color: $black-color;
   background-color: $background-grey;
@@ -17,7 +18,7 @@
 
   &-desc {
     position: relative;
-    z-index: 100;
+    // z-index: 100;
     color: $dark-light;
     line-height: 1.4;
     letter-spacing: .1em;
@@ -36,7 +37,6 @@
   background-color: #fff;
   width: 50%;
   height: 30vh;
-  bottom: 10vh;
   left: 6%;
   box-shadow: 0 4px 92px rgba(0,0,0,.11);
 }
