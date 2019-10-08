@@ -1,9 +1,11 @@
 // == Import : npm
 import React from 'react';
 import classNames from 'classnames';
+import AOS from 'aos';
 
 // == Import : local
 import './app.scss';
+import '../../../node_modules/aos/dist/aos.css';
 import Nav from 'src/components/Nav';
 import Header from 'src/components/Header';
 import About from 'src/components/About';
@@ -14,22 +16,31 @@ class App extends React.Component {
 
   state = {
     navigation: false,
-    navActive: 0,
+  };
+
+  componentDidMount() {
+    AOS.init({
+      duration: 1000,
+    });
   }
 
-  handleClickMenu = () => {
-    window.scrollTo(0,0);
-
-    const { navigation } = this.state;
-
-    this.setState({
-      navigation: !navigation,
-    });
+  componentDidUpdate() {
+    AOS.refresh();
   }
 
   handleClickNavElt = () => {
     this.setState({
       navigation: false,
+    });
+  }
+
+  handleClickMenu = () => {
+    window.scrollTo(0, 0);
+
+    const { navigation } = this.state;
+
+    this.setState({
+      navigation: !navigation,
     });
   }
 

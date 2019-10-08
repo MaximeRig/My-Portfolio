@@ -34,7 +34,7 @@ class OneProject extends React.Component {
     const cardClass = classNames({ card: !cardShow }, { cardClicked: cardShow });
 
     return (
-      <div onClick={this.handleClickProject} className={cardClass}>
+      <div data-aos="fade-left" onClick={this.handleClickProject} className={cardClass}>
         <h3 className="title">{title}</h3>
         <p className="desc">{desc}</p>
         <p className="tools">Outils : {tools}</p>
