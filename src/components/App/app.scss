@@ -31,3 +31,31 @@
 .main {
   background-color: $background-grey;
 }
+
+.section-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  letter-spacing: .1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.separateSection {
+  background-color: $black-color;
+  width: 2px;
+  height: 5vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.separateContact {
+  background-color: $black-color;
+  width: 2px;
+  height: 5vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotate(90deg);
+}

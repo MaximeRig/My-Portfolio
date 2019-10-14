@@ -1,7 +1,7 @@
 // == Import : npm
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 // == Import : local
 import './oneProject.scss';
@@ -9,16 +9,16 @@ import './oneProject.scss';
 // == Composant
 class OneProject extends React.Component {
 
-  state= {
-    cardShow: false,
-  }
+  // state= {
+  //   cardShow: false,
+  // }
 
-  handleClickProject = () => {
-    const { cardShow } = this.state;
-    this.setState({
-      cardShow: !cardShow,
-    });
-  };
+  // handleClickProject = () => {
+  //   const { cardShow } = this.state;
+  //   this.setState({
+  //     cardShow: !cardShow,
+  //   });
+  // };
 
   render() {
     const {
@@ -27,14 +27,15 @@ class OneProject extends React.Component {
       githubUrl,
       desc,
       tools,
+      animation,
     } = this.props;
 
-    const { cardShow } = this.state;
+    // const { cardShow } = this.state;
 
-    const cardClass = classNames({ card: !cardShow }, { cardClicked: cardShow });
+    // const cardClass = classNames('aos-init', { card: !cardShow }, { cardClicked: cardShow }, { 'aos-animate': cardShow });
 
     return (
-      <div data-aos="fade-left" onClick={this.handleClickProject} className={cardClass}>
+      <div data-aos={animation} onClick={this.handleClickProject} className="card">
         <h3 className="title">{title}</h3>
         <p className="desc">{desc}</p>
         <p className="tools">Outils : {tools}</p>
@@ -55,6 +56,7 @@ OneProject.propTypes = {
   githubUrl: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   tools: PropTypes.string.isRequired,
+  animation: PropTypes.string.isRequired,
 };
 
 

@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+.footer {
+  color: $background-grey;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.social {
+  width: 60%;
+  margin: 0 auto 1em auto;
+  display: flex;
+  justify-content: space-around;
+
+  & svg {
+    width: 2em;
+    height: 2em;
+  }
+}

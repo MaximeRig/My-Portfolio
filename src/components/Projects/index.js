@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <React.Fragment>
       <section id="projects" className="projects">
-        <h2 className="projects-title">Voir mes projets</h2>
+        <h2 className="section-title">Voir mes projets</h2>
         <div className="projects-box">
           {projects.map((project) => {
             return (
@@ -22,7 +22,7 @@ const Projects = () => {
           })}
         </div>
       </section>
-      <div className="separateSection" />
+      {/* <div className="separateSection" /> */}
     </React.Fragment>
   );
 };

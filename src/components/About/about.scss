@@ -7,14 +7,14 @@
   color: $black-color;
   background-color: $background-grey;
 
-  &-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 1em;
-    line-height: 1.2;
-    letter-spacing: .1em;
-    font-family: 'Raleway', sans-serif;
-  }
+  // &-title {
+  //   font-size: 2.5em;
+  //   font-weight: bold;
+  //   margin-bottom: 1em;
+  //   line-height: 1.2;
+  //   letter-spacing: .1em;
+  //   font-family: 'Raleway', sans-serif;
+  // }
 
   &-desc {
     position: relative;
@@ -41,14 +41,14 @@
   box-shadow: 0 4px 92px rgba(0,0,0,.11);
 }
 
-.separateSection {
-  background-color: $black-color;
-  width: 2px;
-  height: 5vh;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
+// .separateSection {
+//   background-color: $black-color;
+//   width: 2px;
+//   height: 5vh;
+//   position: relative;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 
 @media (min-width: 440px) {
 

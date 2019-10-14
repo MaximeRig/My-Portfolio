@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+.contact {
+  color: $black-color;
+  padding: 3em 0 4em;
+
+  & .section-title {
+    text-align: center;
+  }
+
+  &-mailMe {
+    text-align: center;
+    font-size: 1.5em;
+
+    & a {
+      padding: .5em 0;
+    }
+  }
+}

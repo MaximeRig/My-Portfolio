@@ -23,7 +23,7 @@ const Nav = ({ navigation, handleClickNavElt }) => {
         <li onClick={handleClickNavElt}><AnchorLink offset={navHeight} href="#home">Accueil</AnchorLink></li>
         <li onClick={handleClickNavElt}><AnchorLink offset={navHeight} href="#about">à propos</AnchorLink></li>
         <li onClick={handleClickNavElt}><AnchorLink offset={navHeight} href="#projects">projets</AnchorLink></li>
-        <li onClick={handleClickNavElt}><AnchorLink offset={navHeight} href="#projects">contact</AnchorLink></li>
+        <li onClick={handleClickNavElt}><AnchorLink offset={navHeight} href="#contact">contact</AnchorLink></li>
       </ul>
     </nav>
   );

@@ -10,41 +10,41 @@
   margin: 2em auto 0;
 }
 
-.card {
-  color: $dark-light;
-  width: 100%;
-  height: 200px;
-  border: 1px solid $dark-light;
-  padding: 1em;
-  margin: .5em;
-  position: relative;
+// .card {
+//   color: $dark-light;
+//   width: 100%;
+//   height: 200px;
+//   border: 1px solid $dark-light;
+//   padding: 1em;
+//   margin: .5em;
+//   position: relative;
 
-  & .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.2em;
-    color: $black-color;
-    text-align: center;
-    transition: all $animation-duration ease;
-  }
+//   & .title {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     font-size: 1.2em;
+//     color: $black-color;
+//     text-align: center;
+//     transition: all $animation-duration ease;
+//   }
 
-  & .desc {
-    // display: none;
-    opacity: 0;
-  }
+//   & .desc {
+//     // display: none;
+//     opacity: 0;
+//   }
 
-  & .tools {
-    // display: none;
-    opacity: 0;
-  }
+//   & .tools {
+//     // display: none;
+//     opacity: 0;
+//   }
 
-  & .links {
-    // display: none;
-    opacity: 0;
-  }
-}
+//   & .links {
+//     // display: none;
+//     opacity: 0;
+//   }
+// }
 
 /* END - CARD BEFORE CLICK */
 
@@ -55,7 +55,7 @@
   transition: all $animation-duration ease;
 }
 
-.cardClicked {
+.card {
   color: $background-grey;
   background-color: #5B7A8F;
   width: 100%;
@@ -70,7 +70,7 @@
     position: absolute;
     background-color: #5B7A8F;
     top: 1em;
-    left: 1em;
+    left: .8em;
     font-size: 1.4em;
     font-weight: bold;
     transition: $animation-duration ease;
@@ -79,7 +79,8 @@
   & .desc {
     // display: block;
     opacity: 1;
-    margin: 2.5em 0 .8em 1em;
+    // margin: 2.5em 0 .8em 1em;
+    margin: 2.5em 0 .8em 0;
     line-height: 1.2;
     letter-spacing: .05em;
     color: $black-color;
@@ -89,7 +90,8 @@
   & .tools {
     // display: block;
     opacity: 1;
-    margin:0 0 1em 1em;
+    // margin:0 0 1em 1em;
+    margin-bottom: 1em;
     letter-spacing: .05em;
     color: $black-color;
     transition: all $animation-duration ease;
